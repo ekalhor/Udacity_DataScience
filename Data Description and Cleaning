@@ -1,7 +1,10 @@
-I chose  Stack Overflow Survey - Multiple Years for my project because I am interested in finding trends and changes among the developer community.
+I chose Stack Overflow Survey - Multiple Years for my project because I am interested in finding trends and changes among the developer community.
 Stack Overflow survey data for the years 2011-2024 is located here: https://survey.stackoverflow.co/
 The number of questions and respondents change from year to year, so it is important to standardize the datasets as much as possible. 
 
-First, we need to make sure that each dataset has a schema. Datafiles for the years 2016+ already come with a schema file, so we need to process data for the years 2011-2015.
+First, we need to make sure that each dataset has a schema. Datafiles for the years 2016+ already come with a schema file, so we need to process data for the years 2011-2015. 
+I inferred the schema from the content of the first and second rows of these files.
 
-
+To standardize the datasets for the years 2011-2015, the following steps were taken:
+> Where the user had to write in their responses, or where there was only one answer to the question, the question would be moved to the standardized files without any changes. 
+> When there were multiple answers/options for the same question, all of the choices made by the same subject would be joined, delimited by a semicolon, and saved into one column. The previous columns will be then removed to get a cleaner dataset.
