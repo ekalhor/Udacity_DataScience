@@ -1,3 +1,7 @@
 I chose  Stack Overflow Survey - Multiple Years for my project because I am interested in finding trends and changes among the developer community.
-Stack Overflow survey data for years 2011-2024 is located here: https://survey.stackoverflow.co/
-The number of questions and respondants change from year to year. 
+Stack Overflow survey data for the years 2011-2024 is located here: https://survey.stackoverflow.co/
+The number of questions and respondents change from year to year, so it is important to standardize the datasets as much as possible. 
+
+First, we need to make sure that each dataset has a schema. Datafiles for the years 2016+ already come with a schema file, so we need to process data for the years 2011-2015.
+
+
