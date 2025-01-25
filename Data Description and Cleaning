@@ -24,3 +24,1023 @@ I inferred the schema from the content of the first and second rows of these fil
 To standardize the datasets for the years 2011-2015, the following steps were taken:
 > Where the user had to write in their responses, or where there was only one answer to the question, the question would be moved to the standardized files without any changes. 
 > When there were multiple answers/options for the same question, all of the choices made by the same subject would be joined, delimited by a semicolon, and saved into one column. The previous columns will be then removed to get a cleaner dataset.
+
+Schema for Survey Year 2011:
+| Question                                                                                       | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-----------------------------------------------------------------------------------------------|:------------|------------------:|--------------:|----------------:|
+| What Country or Region do you live in?                                                         | Text        |              2814 |             0 |              20 |
+| Which US State or Territory do you live in?                                                    | Text        |              1030 |          1784 |              52 |
+| How old are you?                                                                               | Categorical |              2730 |            84 |               9 |
+| How many years of IT/Programming experience do you have?                                       | Categorical |              2730 |            84 |               5 |
+| How would you best describe the industry you work in?                                          | Text        |              2730 |            84 |              13 |
+| Which best describes the size of your company?                                                 | Categorical |              2647 |           167 |               7 |
+| Which of the following best describes your occupation?                                         | Text        |              2647 |           167 |              14 |
+| How likely is it that a recommendation you make will be acted upon?                            | Categorical |              2611 |           203 |               6 |
+| What type of project are you developing?                                                       | Categorical |              2599 |           215 |               6 |
+| What operating system do you use the most?                                                     | Categorical |              2591 |           223 |               6 |
+| Please rate your job/career satisfaction                                                       | Categorical |              2554 |           260 |               6 |
+| Including bonus, what is your annual compensation in USD?                                      | Text        |              2366 |           448 |              10 |
+| In the last 12 months, how much money have you spent on personal technology-related purchases? | Categorical |              2506 |           308 |               8 |
+| Which of our sites do you frequent most?                                                       | Categorical |              2533 |           281 |               8 |
+| What is your involvement in purchasing? You can choose more than 1.                            | Array       |              2647 |           167 |              65 |
+| What types of purchases are you involved in?                                                   | Array       |              1953 |           861 |              54 |
+| What is your budget for outside expenditures (hardware, software, consulting, etc) for 2011?   | Array       |              1953 |           861 |              21 |
+| Which languages are you proficient in?                                                         | Array       |              2595 |           219 |            1118 |
+| Which technology products do you own? (You can choose more than one)                           | Array       |              2446 |           368 |            1100 |
+
+Schema for Survey Year 2012:
+| Question                                                                                                                 | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-------------------------------------------------------------------------------------------------------------------------|:------------|------------------:|--------------:|----------------:|
+| What Country or Region do you live in?                                                                                   | Text        |              6244 |             0 |              21 |
+| Which US State or Territory do you live in?                                                                              | Text        |              1776 |          4468 |              54 |
+| How old are you?                                                                                                         | Categorical |              5965 |           279 |               9 |
+| How many years of IT/Programming experience do you have?                                                                 | Categorical |              5965 |           279 |               5 |
+| How would you best describe the industry you currently work in?                                                          | Text        |              5965 |           279 |              13 |
+| Which best describes the size of your company?                                                                           | Categorical |              5738 |           506 |               7 |
+| Which of the following best describes your occupation?                                                                   | Text        |              5738 |           506 |              15 |
+| What is your budget for outside expenditures (hardware, software, consulting, etc) for 2011?                             | Categorical |              3758 |          2486 |               9 |
+| What type of project are you developing?                                                                                 | Categorical |              5560 |           684 |               7 |
+| Which desktop operating system do you use the most?                                                                      | Categorical |              5548 |           696 |               7 |
+| What best describes your career / job satisfaction?                                                                      | Categorical |              5445 |           799 |               7 |
+| Including bonus, what is your annual compensation in USD?                                                                | Text        |              5238 |          1006 |              11 |
+| Have you visited / Are you aware of Stack Overflow Careers?                                                              | Categorical |              5444 |           800 |               3 |
+| Do you have a Stack Overflow Careers Profile?                                                                            | Categorical |              5444 |           800 |               5 |
+| In the last 12 months, how much money have you spent on personal technology-related purchases?                           | Categorical |              5298 |           946 |               8 |
+| What advertisers do you remember seeing on Stack Overflow?                                                               | Array       |              1981 |          4263 |            1465 |
+| What is your current Stack Overflow reputation?                                                                          | Text        |              5143 |          1101 |              12 |
+| What is your involvement in purchasing products or services for the company you work for? (You can choose more than one) | Array       |              5738 |           506 |              71 |
+| What types of purchases are you involved in?                                                                             | Array       |              3758 |          2486 |              56 |
+| Which languages are you proficient in?                                                                                   | Array       |              5527 |           717 |            2059 |
+| You answered you don't have a Careers profile, can you elaborate why?                                                    | Array       |              2049 |          4195 |             323 |
+| Which technology products do you own? (You can choose more than one)                                                     | Array       |              5145 |          1099 |            1901 |
+| Please rate the advertising you've seen on Stack Overflow                                                                | Array       |              5197 |          1047 |            1577 |
+| Which of our sites do you frequent most?                                                                                 | Array       |              5197 |          1047 |             190 |
+
+Schema for Survey Year 2013:
+| Question                                                                                                                                                                                                                                                                             | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------|------------------:|--------------:|----------------:|
+| What Country or Region do you live in?                                                                                                                                                                                                                                               | Text        |              9742 |             1 |              21 |
+| Which US State or Territory do you live in?                                                                                                                                                                                                                                          | Text        |              3160 |          6583 |              53 |
+| How old are you?                                                                                                                                                                                                                                                                     | Categorical |              9435 |           308 |               9 |
+| How many years of IT/Programming experience do you have?                                                                                                                                                                                                                             | Categorical |              9437 |           306 |               5 |
+| How would you best describe the industry you currently work in?                                                                                                                                                                                                                      | Text        |              9437 |           306 |              13 |
+| How many people work for your company?                                                                                                                                                                                                                                               | Categorical |              8219 |          1524 |               7 |
+| Which of the following best describes your occupation?                                                                                                                                                                                                                               | Text        |              8219 |          1524 |              15 |
+| Including yourself, how many developers are employed at your company?                                                                                                                                                                                                                | Categorical |              7834 |          1909 |               7 |
+| How large is the team that you work on?                                                                                                                                                                                                                                              | Categorical |              7942 |          1801 |               6 |
+| What is your budget for outside expenditures (hardware, software, consulting, etc) for 2013?                                                                                                                                                                                         | Categorical |              6158 |          3585 |               7 |
+| Which desktop operating system do you use the most?                                                                                                                                                                                                                                  | Categorical |              8075 |          1668 |               7 |
+| Have you changed jobs in the last 12 months?                                                                                                                                                                                                                                         | Categorical |              7393 |          2350 |               3 |
+| What best describes your career / job satisfaction?                                                                                                                                                                                                                                  | Categorical |              7629 |          2114 |               7 |
+| Including bonus, what is your annual compensation in USD?                                                                                                                                                                                                                            | Text        |              7059 |          2684 |              11 |
+| In the last 12 months, how much money have you spent on personal technology-related purchases?                                                                                                                                                                                       | Categorical |              7462 |          2281 |               8 |
+| What advertisers do you remember seeing on Stack Overflow?                                                                                                                                                                                                                           | Array       |              2758 |          6985 |            1726 |
+| What is your current Stack Overflow reputation?                                                                                                                                                                                                                                      | Text        |              7433 |          2310 |              12 |
+| What other departments / roles do you interact with regularly?                                                                                                                                                                                                                       | Array       |              7308 |          2435 |             713 |
+| If your company has a native mobile app, what platforms do you support?                                                                                                                                                                                                              | Array       |              7094 |          2649 |              60 |
+| If you make a software product, how does your company make money? (You can choose more than one)                                                                                                                                                                                     | Array       |              6496 |          3247 |             182 |
+| In an average week, how do you spend your time?                                                                                                                                                                                                                                      | Array       |              7853 |          1890 |            7099 |
+| What is your involvement in purchasing products or services for the company you work for? (You can choose more than one)                                                                                                                                                             | Array       |              8219 |          1524 |              23 |
+| What types of purchases are you involved in?                                                                                                                                                                                                                                         | Array       |              6158 |          3585 |              57 |
+| Which of the following languages or technologies have you used significantly in the past year?                                                                                                                                                                                       | Array       |              8043 |          1700 |            2743 |
+| Which technologies are you excited about?                                                                                                                                                                                                                                            | Array       |              5598 |          4145 |             483 |
+| Please rate how important each of the following characteristics of a company/job offer are to you.    Please select a MAXIMUM of 3 items as "Non-Negotiables" to help us identify the most important items, those where you would never consider a company if they didn't meet them. | Array       |              7154 |          2589 |            6930 |
+| Which technology products do you own? (You can choose more than one)                                                                                                                                                                                                                 | Array       |              7048 |          2695 |            1499 |
+| Please rate the advertising you've seen on Stack Overflow                                                                                                                                                                                                                            | Array       |              7530 |          2213 |            1721 |
+| How do you use Stack Overflow?                                                                                                                                                                                                                                                       | Array       |              7530 |          2213 |             602 |
+
+Schema for Survey Year 2014:
+| Question                                                                                                                 | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-------------------------------------------------------------------------------------------------------------------------|:------------|------------------:|--------------:|----------------:|
+| Which US State or Territory do you live in?                                                                              | Text        |              2109 |          5535 |              52 |
+| How old are you?                                                                                                         | Categorical |              7347 |           297 |               9 |
+| What is your gender?                                                                                                     | Categorical |              7347 |           297 |               4 |
+| How many years of IT/Programming experience do you have?                                                                 | Categorical |              7347 |           297 |               5 |
+| Which of the following best describes your occupation?                                                                   | Text        |              7347 |           297 |              16 |
+| Including bonus, what is your annual compensation in USD?                                                                | Text        |              6901 |           743 |              11 |
+| How would you best describe the industry you currently work in?                                                          | Text        |              7220 |           424 |              16 |
+| How many developers are employed at your company?                                                                        | Categorical |              6398 |          1246 |               7 |
+| Do you work remotely?                                                                                                    | Categorical |              7220 |           424 |               5 |
+| Do you enjoy working remotely?                                                                                           | Categorical |              4570 |          3074 |               6 |
+| Where do you work remotely most of the time?                                                                             | Categorical |              4537 |          3107 |               6 |
+| What is your budget for outside expenditures (hardware, software, consulting, etc) for 2014?                             | Categorical |              4403 |          3241 |               8 |
+| Which desktop operating system do you use the most?                                                                      | Text        |              6566 |          1078 |              11 |
+| Have you changed jobs in the last 12 months?                                                                             | Categorical |              6457 |          1187 |               3 |
+| Are you currently looking for a job or open to new opportunities?                                                        | Categorical |              6248 |          1396 |               3 |
+| How often are you contacted by recruiters?                                                                               | Categorical |              6185 |          1459 |               4 |
+| How often do you visit job boards?                                                                                       | Categorical |              6138 |          1506 |               4 |
+| Have you visited / Are you aware of Stack Overflow Careers 2.0?                                                          | Categorical |              6457 |          1187 |               4 |
+| Do you have a Stack Overflow Careers 2.0 Profile?                                                                        | Categorical |              6457 |          1187 |               5 |
+| Were you aware of the Apptivate contest?                                                                                 | Categorical |              6224 |          1420 |               4 |
+| Did you participate in the Apptivate contest?                                                                            | Categorical |              6195 |          1449 |               4 |
+| What advertisers do you remember seeing on Stack Overflow?                                                               | Array       |              1632 |          6012 |            1097 |
+| What is your current Stack Overflow reputation?                                                                          | Text        |              6284 |          1360 |              12 |
+| How often do you find solutions to your programming problems on Stack Overflow without asking a new question?            | Categorical |              6259 |          1385 |               6 |
+| What Country do you live in?                                                                                             | Text        |              7644 |             0 |              97 |
+| If your company has a native mobile app, what platforms do you support?                                                  | Array       |              5884 |          1760 |              69 |
+| In an average week, how do you spend your time at work?                                                                  | Array       |              6106 |          1538 |            5494 |
+| What is your involvement in purchasing products or services for the company you work for? (You can choose more than one) | Array       |              6700 |           944 |              27 |
+| What types of purchases are you involved in?                                                                             | Array       |              4403 |          3241 |             103 |
+| Which of the following languages or technologies have you used significantly in the past year?                           | Array       |              6538 |          1106 |            1890 |
+| Which technologies are you excited about?                                                                                | Array       |              5054 |          2590 |             803 |
+| Which technology products do you own? (You can choose more than one)                                                     | Array       |              6097 |          1547 |            1249 |
+| How did you find out about your current job?                                                                             | Array       |              6139 |          1505 |             291 |
+| How do you prefer to be contacted about job opportunities?                                                               | Array       |              6081 |          1563 |            1304 |
+| In receiving an email about a job opportunity, what attributes of the message would make you more likely to respond?     | Array       |              5920 |          1724 |            3223 |
+| Please rate the advertising you've seen on Stack Overflow                                                                | Array       |              6395 |          1249 |            2508 |
+| How do you use Stack Overflow?                                                                                           | Array       |              6345 |          1299 |             293 |
+
+Schema for Survey Year 2015:
+| Question                                                        | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:----------------------------------------------------------------|:------------|------------------:|--------------:|----------------:|
+| Country                                                         | Text        |             25280 |           807 |             157 |
+| Age                                                             | Text        |             25832 |           255 |              10 |
+| Gender                                                          | Categorical |             25745 |           342 |               5 |
+| Tabs or Spaces                                                  | Categorical |             25808 |           279 |               5 |
+| Years IT / Programming Experience                               | Categorical |             24828 |          1259 |               6 |
+| Occupation                                                      | Text        |             20852 |          5235 |              25 |
+| Desktop Operating System                                        | Text        |             21981 |          4106 |              11 |
+| Compensation                                                    | Text        |             19482 |          6605 |              12 |
+| Employment Status                                               | Categorical |             21305 |          4782 |               9 |
+| Industry                                                        | Text        |             16159 |          9928 |              21 |
+| Job Satisfaction                                                | Categorical |             16175 |          9912 |               7 |
+| Purchasing Power                                                | Categorical |             16042 |         10045 |               7 |
+| Remote Status                                                   | Categorical |             16153 |          9934 |               5 |
+| Changed Jobs in last 12 Months                                  | Categorical |             19231 |          6856 |               4 |
+| Open to new job opportunities                                   | Categorical |             19067 |          7020 |               4 |
+| How important is remote when evaluating new job opportunity?    | Categorical |             18891 |          7196 |               6 |
+| How often contacted by recruiters                               | Categorical |             16455 |          9632 |               6 |
+| Perception of recruiter contact                                 | Categorical |             15591 |         10496 |               4 |
+| How many caffeinated beverages per day?                         | Text        |             16511 |          9576 |              12 |
+| How many hours programming as hobby per week?                   | Categorical |             16517 |          9570 |               7 |
+| How frequently land on or read Stack Overflow                   | Categorical |             16514 |          9573 |               7 |
+| Preferred text editor                                           | Categorical |             14058 |         12029 |               9 |
+| Prefered IDE theme                                              | Categorical |             16468 |          9619 |               4 |
+| Prefered Source Control                                         | Text        |             15272 |         10815 |              10 |
+| How often are Stack Overflow's answers helpful                  | Categorical |             16394 |          9693 |               6 |
+| Current Lang & Tech                                             | Array       |             22108 |          3979 |           10688 |
+| Future Lang & Tech                                              | Array       |             21527 |          4560 |           12901 |
+| Training & Education                                            | Array       |             21313 |          4774 |             451 |
+| Perception of contact form                                      | Array       |             16320 |          9767 |            2910 |
+| Most urgent info about job opportunity                          | Array       |             16108 |          9979 |             250 |
+| Who do you want to communicate with about a new job opportunity | Array       |             15826 |         10261 |             235 |
+| Why try Stack Overflow Careers                                  | Array       |              9537 |         16550 |              59 |
+| Source control used                                             | Array       |             16323 |          9764 |             528 |
+| Why use Stack Overflow                                          | Array       |             16295 |          9792 |             285 |
+| Why answer                                                      | Array       |             15975 |         10112 |             166 |
+
+Schema for Survey Year 2016:
+| Question                         | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:---------------------------------|:------------|------------------:|--------------:|----------------:|
+| nan                              | Numeric     |             56030 |             1 |           56030 |
+| collector                        | Categorical |             56031 |             0 |               7 |
+| country                          | Text        |             55529 |           502 |             176 |
+| un_subregion                     | Text        |             55314 |           717 |              21 |
+| so_region                        | Text        |             55391 |           640 |              15 |
+| age_range                        | Text        |             55728 |           303 |              10 |
+| age_midpoint                     | Categorical |             55337 |           694 |               9 |
+| gender                           | Categorical |             55587 |           444 |               5 |
+| self_identification              | Array       |             54203 |          1828 |            1724 |
+| occupation                       | Text        |             49520 |          6511 |              28 |
+| occupation_group                 | Text        |             46935 |          9096 |              22 |
+| experience_range                 | Categorical |             49521 |          6510 |               6 |
+| experience_midpoint              | Categorical |             49521 |          6510 |               6 |
+| salary_range                     | Text        |             46122 |          9909 |              25 |
+| salary_midpoint                  | Text        |             41743 |         14288 |              22 |
+| big_mac_index                    | Text        |             48826 |          7205 |              32 |
+| tech_do                          | Array       |             49026 |          7005 |           19140 |
+| tech_want                        | Array       |             47953 |          8078 |           24295 |
+| aliens                           | Categorical |             49178 |          6853 |               4 |
+| programming_ability              | Text        |             46983 |          9048 |              11 |
+| employment_status                | Text        |             49577 |          6454 |              10 |
+| industry                         | Text        |             40111 |         15920 |              22 |
+| company_size_range               | Text        |             39933 |         16098 |              13 |
+| team_size_range                  | Categorical |             39963 |         16068 |               9 |
+| women_on_team                    | Text        |             39809 |         16222 |              16 |
+| remote                           | Categorical |             40119 |         15912 |               5 |
+| job_satisfaction                 | Categorical |             40111 |         15920 |               8 |
+| job_discovery                    | Text        |             40028 |         16003 |              14 |
+| dev_environment                  | Array       |             45714 |         10317 |            4657 |
+| commit_frequency                 | Categorical |             46599 |          9432 |               8 |
+| hobby                            | Categorical |             46674 |          9357 |               8 |
+| dogs_vs_cats                     | Categorical |             45240 |         10791 |               4 |
+| desktop_os                       | Text        |             46452 |          9579 |              12 |
+| unit_testing                     | Categorical |             46658 |          9373 |               5 |
+| rep_range                        | Text        |             46144 |          9887 |              10 |
+| visit_frequency                  | Categorical |             46155 |          9876 |               7 |
+| why_learn_new_tech               | Categorical |             46146 |          9885 |               8 |
+| education                        | Array       |             44956 |         11075 |             998 |
+| open_to_new_job                  | Categorical |             44381 |         11650 |               4 |
+| new_job_value                    | Array       |             43659 |         12372 |           14391 |
+| job_search_annoyance             | Text        |             42852 |         13179 |              10 |
+| interview_likelihood             | Text        |             42264 |         13767 |              13 |
+| how_to_improve_interview_process | Array       |             41042 |         14989 |             488 |
+| star_wars_vs_star_trek           | Array       |             34399 |         21632 |               4 |
+| agree_tech                       | Categorical |             42663 |         13368 |               6 |
+| agree_notice                     | Categorical |             42756 |         13275 |               6 |
+| agree_problemsolving             | Categorical |             42660 |         13371 |               6 |
+| agree_diversity                  | Categorical |             42506 |         13525 |               6 |
+| agree_adblocker                  | Categorical |             42628 |         13403 |               6 |
+| agree_alcohol                    | Categorical |             42693 |         13338 |               6 |
+| agree_loveboss                   | Categorical |             42097 |         13934 |               6 |
+| agree_nightcode                  | Categorical |             42614 |         13417 |               6 |
+| agree_legacy                     | Categorical |             42383 |         13648 |               6 |
+| agree_mars                       | Categorical |             42686 |         13345 |               6 |
+| important_variety                | Categorical |             42629 |         13402 |               4 |
+| important_control                | Categorical |             42573 |         13458 |               4 |
+| important_sameend                | Categorical |             42532 |         13499 |               4 |
+| important_newtech                | Categorical |             42605 |         13426 |               4 |
+| important_buildnew               | Categorical |             42539 |         13492 |               4 |
+| important_buildexisting          | Categorical |             42581 |         13450 |               4 |
+| important_promotion              | Categorical |             42484 |         13547 |               4 |
+| important_companymission         | Categorical |             42530 |         13501 |               4 |
+| important_wfh                    | Categorical |             42583 |         13448 |               4 |
+| important_ownoffice              | Categorical |             42539 |         13492 |               4 |
+| developer_challenges             | Array       |             41097 |         14934 |            8254 |
+| why_stack_overflow               | Array       |             41794 |         14237 |             554 |
+
+Schema for Survey Year 2017:
+| Question                         | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:---------------------------------|:------------|------------------:|--------------:|----------------:|
+| Respondent                       | Text        |             51393 |             0 |           51393 |
+| Professional                     | Categorical |             51393 |             0 |               6 |
+| ProgramHobby                     | Categorical |             51393 |             0 |               5 |
+| Country                          | Text        |             51393 |             0 |             202 |
+| University                       | Categorical |             51393 |             0 |               5 |
+| EmploymentStatus                 | Categorical |             51393 |             0 |               8 |
+| FormalEducation                  | Text        |             51393 |             0 |              10 |
+| MajorUndergrad                   | Text        |             42842 |          8551 |              17 |
+| HomeRemote                       | Categorical |             44009 |          7384 |               8 |
+| CompanySize                      | Text        |             38923 |         12470 |              11 |
+| CompanyType                      | Text        |             38824 |         12569 |              12 |
+| YearsProgram                     | Text        |             51146 |           247 |              22 |
+| YearsCodedJob                    | Text        |             40891 |         10502 |              22 |
+| YearsCodedJobPast                | Text        |               975 |         50418 |              22 |
+| DeveloperType                    | Array       |             36126 |         15267 |            1824 |
+| WebDeveloperType                 | Categorical |             10697 |         40696 |               4 |
+| MobileDeveloperType              | Array       |              1554 |         49839 |              12 |
+| NonDeveloperType                 | Array       |              4891 |         46502 |             135 |
+| CareerSatisfaction               | Text        |             42696 |          8697 |              12 |
+| JobSatisfaction                  | Text        |             40377 |         11016 |              12 |
+| ExCoderReturn                    | Categorical |               924 |         50469 |               6 |
+| ExCoderNotForMe                  | Categorical |               922 |         50471 |               6 |
+| ExCoderBalance                   | Categorical |               924 |         50469 |               6 |
+| ExCoder10Years                   | Categorical |               918 |         50475 |               6 |
+| ExCoderBelonged                  | Categorical |               929 |         50464 |               6 |
+| ExCoderSkills                    | Categorical |               936 |         50457 |               6 |
+| ExCoderWillNotCode               | Categorical |               923 |         50470 |               6 |
+| ExCoderActive                    | Categorical |               931 |         50462 |               6 |
+| PronounceGIF                     | Categorical |             51009 |           384 |               5 |
+| ProblemSolving                   | Categorical |             31294 |         20099 |               6 |
+| BuildingThings                   | Categorical |             31235 |         20158 |               6 |
+| LearningNewTech                  | Categorical |             31305 |         20088 |               6 |
+| BoringDetails                    | Categorical |             31185 |         20208 |               6 |
+| JobSecurity                      | Categorical |             31241 |         20152 |               6 |
+| DiversityImportant               | Categorical |             30904 |         20489 |               6 |
+| AnnoyingUI                       | Categorical |             31022 |         20371 |               6 |
+| FriendsDevelopers                | Categorical |             31058 |         20335 |               6 |
+| RightWrongWay                    | Categorical |             30985 |         20408 |               6 |
+| UnderstandComputers              | Categorical |             31048 |         20345 |               6 |
+| SeriousWork                      | Categorical |             31015 |         20378 |               6 |
+| InvestTimeTools                  | Categorical |             30887 |         20506 |               6 |
+| WorkPayCare                      | Categorical |             30966 |         20427 |               6 |
+| KinshipDevelopers                | Categorical |             30703 |         20690 |               6 |
+| ChallengeMyself                  | Categorical |             30972 |         20421 |               6 |
+| CompetePeers                     | Categorical |             30811 |         20582 |               6 |
+| ChangeWorld                      | Categorical |             30936 |         20457 |               6 |
+| JobSeekingStatus                 | Categorical |             33381 |         18012 |               4 |
+| HoursPerWeek                     | Text        |             20601 |         30792 |              42 |
+| LastNewJob                       | Categorical |             32711 |         18682 |               6 |
+| AssessJobIndustry                | Categorical |             22131 |         29262 |               6 |
+| AssessJobRole                    | Categorical |             22148 |         29245 |               6 |
+| AssessJobExp                     | Categorical |             22137 |         29256 |               6 |
+| AssessJobDept                    | Categorical |             22124 |         29269 |               6 |
+| AssessJobTech                    | Categorical |             22190 |         29203 |               6 |
+| AssessJobProjects                | Categorical |             22184 |         29209 |               6 |
+| AssessJobCompensation            | Categorical |             22147 |         29246 |               6 |
+| AssessJobOffice                  | Categorical |             22005 |         29388 |               6 |
+| AssessJobCommute                 | Categorical |             21974 |         29419 |               6 |
+| AssessJobRemote                  | Categorical |             22021 |         29372 |               6 |
+| AssessJobLeaders                 | Categorical |             21987 |         29406 |               6 |
+| AssessJobProfDevel               | Categorical |             21999 |         29394 |               6 |
+| AssessJobDiversity               | Categorical |             21979 |         29414 |               6 |
+| AssessJobProduct                 | Categorical |             21998 |         29395 |               6 |
+| AssessJobFinances                | Categorical |             22024 |         29369 |               6 |
+| ImportantBenefits                | Array       |             30236 |         21157 |            3531 |
+| ClickyKeys                       | Categorical |             42047 |          9346 |               3 |
+| JobProfile                       | Array       |             24720 |         26673 |             480 |
+| ResumePrompted                   | Categorical |             22462 |         28931 |               9 |
+| LearnedHiring                    | Categorical |             23738 |         27655 |               9 |
+| ImportantHiringAlgorithms        | Categorical |             28643 |         22750 |               6 |
+| ImportantHiringTechExp           | Categorical |             28695 |         22698 |               6 |
+| ImportantHiringCommunication     | Categorical |             28640 |         22753 |               6 |
+| ImportantHiringOpenSource        | Categorical |             28597 |         22796 |               6 |
+| ImportantHiringPMExp             | Categorical |             28618 |         22775 |               6 |
+| ImportantHiringCompanies         | Categorical |             28554 |         22839 |               6 |
+| ImportantHiringTitles            | Categorical |             28554 |         22839 |               6 |
+| ImportantHiringEducation         | Categorical |             28664 |         22729 |               6 |
+| ImportantHiringRep               | Categorical |             28619 |         22774 |               6 |
+| ImportantHiringGettingThingsDone | Categorical |             28546 |         22847 |               6 |
+| Currency                         | Text        |             21409 |         29984 |              18 |
+| Overpaid                         | Categorical |             13388 |         38005 |               6 |
+| TabsSpaces                       | Categorical |             38852 |         12541 |               4 |
+| EducationImportant               | Categorical |             23356 |         28037 |               6 |
+| EducationTypes                   | Array       |             30355 |         21038 |             448 |
+| SelfTaughtTypes                  | Array       |             26736 |         24657 |            1150 |
+| TimeAfterBootcamp                | Text        |              2603 |         48790 |              10 |
+| CousinEducation                  | Array       |             23569 |         27824 |             736 |
+| WorkStart                        | Text        |             36697 |         14696 |              25 |
+| HaveWorkedLanguage               | Array       |             36626 |         14767 |            8439 |
+| WantWorkLanguage                 | Array       |             33772 |         17621 |           11240 |
+| HaveWorkedFramework              | Array       |             20230 |         31163 |             286 |
+| WantWorkFramework                | Array       |             23332 |         28061 |             408 |
+| HaveWorkedDatabase               | Array       |             29453 |         21940 |             238 |
+| WantWorkDatabase                 | Array       |             25110 |         26283 |             249 |
+| HaveWorkedPlatform               | Array       |             29115 |         22278 |            2007 |
+| WantWorkPlatform                 | Array       |             27885 |         23508 |            2199 |
+| IDE                              | Array       |             35831 |         15562 |            4799 |
+| AuditoryEnvironment              | Categorical |             36458 |         14935 |               7 |
+| Methodology                      | Array       |             25772 |         25621 |             789 |
+| VersionControl                   | Text        |             30731 |         20662 |              11 |
+| CheckInCode                      | Categorical |             29562 |         21831 |               7 |
+| ShipIt                           | Categorical |             29642 |         21751 |               6 |
+| OtherPeoplesCode                 | Categorical |             29620 |         21773 |               6 |
+| ProjectManagement                | Categorical |             29400 |         21993 |               6 |
+| EnjoyDebugging                   | Categorical |             29766 |         21627 |               6 |
+| InTheZone                        | Categorical |             29351 |         22042 |               6 |
+| DifficultCommunication           | Categorical |             29641 |         21752 |               6 |
+| CollaborateRemote                | Categorical |             29458 |         21935 |               6 |
+| MetricAssess                     | Array       |             25473 |         25920 |            2421 |
+| EquipmentSatisfiedMonitors       | Categorical |             29726 |         21667 |               6 |
+| EquipmentSatisfiedCPU            | Categorical |             29728 |         21665 |               6 |
+| EquipmentSatisfiedRAM            | Categorical |             29737 |         21656 |               6 |
+| EquipmentSatisfiedStorage        | Categorical |             29672 |         21721 |               6 |
+| EquipmentSatisfiedRW             | Categorical |             29690 |         21703 |               6 |
+| InfluenceInternet                | Categorical |             29692 |         21701 |               6 |
+| InfluenceWorkstation             | Categorical |             21659 |         29734 |               6 |
+| InfluenceHardware                | Categorical |             21660 |         29733 |               6 |
+| InfluenceServers                 | Categorical |             21585 |         29808 |               6 |
+| InfluenceTechStack               | Categorical |             21602 |         29791 |               6 |
+| InfluenceDeptTech                | Categorical |             21594 |         29799 |               6 |
+| InfluenceVizTools                | Categorical |             21614 |         29779 |               6 |
+| InfluenceDatabase                | Categorical |             21617 |         29776 |               6 |
+| InfluenceCloud                   | Categorical |             21596 |         29797 |               6 |
+| InfluenceConsultants             | Categorical |             21546 |         29847 |               6 |
+| InfluenceRecruitment             | Categorical |             21587 |         29806 |               6 |
+| InfluenceCommunication           | Categorical |             21579 |         29814 |               6 |
+| StackOverflowDescribes           | Categorical |             36933 |         14460 |               6 |
+| StackOverflowSatisfaction        | Text        |             36593 |         14800 |              12 |
+| StackOverflowDevices             | Array       |             35204 |         16189 |              48 |
+| StackOverflowFoundAnswer         | Categorical |             34291 |         17102 |               6 |
+| StackOverflowCopiedCode          | Categorical |             33910 |         17483 |               6 |
+| StackOverflowJobListing          | Categorical |             33469 |         17924 |               6 |
+| StackOverflowCompanyPage         | Categorical |             33436 |         17957 |               6 |
+| StackOverflowJobSearch           | Categorical |             33416 |         17977 |               6 |
+| StackOverflowNewQuestion         | Categorical |             33619 |         17774 |               6 |
+| StackOverflowAnswer              | Categorical |             33557 |         17836 |               6 |
+| StackOverflowMetaChat            | Categorical |             33408 |         17985 |               6 |
+| StackOverflowAdsRelevant         | Categorical |             30818 |         20575 |               6 |
+| StackOverflowAdsDistracting      | Categorical |             31738 |         19655 |               6 |
+| StackOverflowModeration          | Categorical |             30130 |         21263 |               6 |
+| StackOverflowCommunity           | Categorical |             32411 |         18982 |               6 |
+| StackOverflowHelpful             | Categorical |             33947 |         17446 |               6 |
+| StackOverflowBetter              | Categorical |             33651 |         17742 |               6 |
+| StackOverflowWhatDo              | Categorical |             33370 |         18023 |               6 |
+| StackOverflowMakeMoney           | Categorical |             31063 |         20330 |               6 |
+| Gender                           | Array       |             35048 |         16345 |              30 |
+| HighestEducationParents          | Text        |             34939 |         16454 |              11 |
+| Race                             | Array       |             33034 |         18359 |              98 |
+| SurveyLong                       | Categorical |             34721 |         16672 |               6 |
+| QuestionsInteresting             | Categorical |             34537 |         16856 |               6 |
+| QuestionsConfusing               | Categorical |             34420 |         16973 |               6 |
+| InterestedAnswers                | Categorical |             34613 |         16780 |               6 |
+| Salary                           | Text        |             12892 |         38501 |            3050 |
+| ExpectedSalary                   | Text        |              2567 |         48826 |             686 |
+
+Schema for Survey Year 2018:
+| Question                    | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:----------------------------|:------------|------------------:|--------------:|----------------:|
+| Respondent                  | Text        |             98856 |             0 |           98856 |
+| Hobby                       | Categorical |             98856 |             0 |               3 |
+| OpenSource                  | Categorical |             98856 |             0 |               3 |
+| Country                     | Text        |             98444 |           412 |             184 |
+| Student                     | Categorical |             94902 |          3954 |               4 |
+| Employment                  | Categorical |             95322 |          3534 |               7 |
+| FormalEducation             | Text        |             94704 |          4152 |              10 |
+| UndergradMajor              | Text        |             79037 |         19819 |              13 |
+| CompanySize                 | Categorical |             71532 |         27324 |               9 |
+| DevType                     | Array       |             92099 |          6757 |            9569 |
+| YearsCoding                 | Text        |             93836 |          5020 |              12 |
+| YearsCodingProf             | Text        |             77904 |         20952 |              12 |
+| JobSatisfaction             | Categorical |             69277 |         29579 |               8 |
+| CareerSatisfaction          | Categorical |             76505 |         22351 |               8 |
+| HopeFiveYears               | Categorical |             75719 |         23137 |               8 |
+| JobSearchStatus             | Categorical |             79489 |         19367 |               4 |
+| LastNewJob                  | Categorical |             78890 |         19966 |               6 |
+| AssessJob1                  | Text        |             66986 |         31870 |              11 |
+| AssessJob2                  | Text        |             66986 |         31870 |              11 |
+| AssessJob3                  | Text        |             66986 |         31870 |              11 |
+| AssessJob4                  | Text        |             66986 |         31870 |              11 |
+| AssessJob5                  | Text        |             66986 |         31870 |              11 |
+| AssessJob6                  | Text        |             66986 |         31870 |              11 |
+| AssessJob7                  | Text        |             66986 |         31870 |              11 |
+| AssessJob8                  | Text        |             66986 |         31870 |              11 |
+| AssessJob9                  | Text        |             66986 |         31870 |              11 |
+| AssessJob10                 | Text        |             66986 |         31870 |              11 |
+| AssessBenefits1             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits2             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits3             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits4             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits5             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits6             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits7             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits8             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits9             | Text        |             64919 |         33937 |              12 |
+| AssessBenefits10            | Text        |             64919 |         33937 |              12 |
+| AssessBenefits11            | Text        |             64918 |         33938 |              12 |
+| JobContactPriorities1       | Categorical |             48707 |         50149 |               6 |
+| JobContactPriorities2       | Categorical |             48707 |         50149 |               6 |
+| JobContactPriorities3       | Categorical |             48707 |         50149 |               6 |
+| JobContactPriorities4       | Categorical |             48707 |         50149 |               6 |
+| JobContactPriorities5       | Categorical |             48707 |         50149 |               6 |
+| JobEmailPriorities1         | Categorical |             46214 |         52642 |               8 |
+| JobEmailPriorities2         | Categorical |             46214 |         52642 |               8 |
+| JobEmailPriorities3         | Categorical |             46214 |         52642 |               8 |
+| JobEmailPriorities4         | Categorical |             46214 |         52642 |               8 |
+| JobEmailPriorities5         | Categorical |             46214 |         52642 |               8 |
+| JobEmailPriorities6         | Categorical |             46214 |         52642 |               8 |
+| JobEmailPriorities7         | Categorical |             46214 |         52642 |               8 |
+| UpdateCV                    | Categorical |             65540 |         33316 |               9 |
+| Currency                    | Text        |             62009 |         36847 |              20 |
+| Salary                      | Text        |             50579 |         48277 |            3999 |
+| SalaryType                  | Categorical |             51071 |         47785 |               4 |
+| ConvertedSalary             | Text        |             47703 |         51153 |            7474 |
+| CurrencySymbol              | Text        |             58651 |         40205 |             113 |
+| CommunicationTools          | Array       |             56971 |         41885 |            1150 |
+| TimeFullyProductive         | Categorical |             51873 |         46983 |               7 |
+| EducationTypes              | Array       |             67961 |         30895 |             495 |
+| SelfTaughtTypes             | Array       |             57355 |         41501 |             472 |
+| TimeAfterBootcamp           | Categorical |              6653 |         92203 |               9 |
+| HackathonReasons            | Array       |             25692 |         73164 |             128 |
+| AgreeDisagree1              | Categorical |             68218 |         30638 |               6 |
+| AgreeDisagree2              | Categorical |             68347 |         30509 |               6 |
+| AgreeDisagree3              | Categorical |             68365 |         30491 |               6 |
+| LanguageWorkedWith          | Array       |             78335 |         20521 |           26679 |
+| LanguageDesireNextYear      | Array       |             73245 |         25611 |           28658 |
+| DatabaseWorkedWith          | Array       |             66271 |         32585 |            6878 |
+| DatabaseDesireNextYear      | Array       |             57499 |         41357 |           10029 |
+| PlatformWorkedWith          | Array       |             66000 |         32856 |            9321 |
+| PlatformDesireNextYear      | Array       |             61354 |         37502 |           13705 |
+| FrameworkWorkedWith         | Array       |             51621 |         47235 |            1015 |
+| FrameworkDesireNextYear     | Array       |             55219 |         43637 |            1787 |
+| IDE                         | Array       |             75399 |         23457 |            7885 |
+| OperatingSystem             | Categorical |             76180 |         22676 |               5 |
+| NumberMonitors              | Categorical |             76399 |         22457 |               6 |
+| Methodology                 | Array       |             58982 |         39874 |             481 |
+| VersionControl              | Array       |             74299 |         24557 |              91 |
+| CheckInCode                 | Categorical |             72356 |         26500 |               7 |
+| AdBlocker                   | Categorical |             76056 |         22800 |               4 |
+| AdBlockerDisable            | Categorical |             54899 |         43957 |               4 |
+| AdBlockerReasons            | Array       |             37746 |         61110 |              64 |
+| AdsAgreeDisagree1           | Categorical |             74486 |         24370 |               6 |
+| AdsAgreeDisagree2           | Categorical |             74414 |         24442 |               6 |
+| AdsAgreeDisagree3           | Categorical |             74415 |         24441 |               6 |
+| AdsActions                  | Array       |             59515 |         39341 |              16 |
+| AdsPriorities1              | Categorical |             60480 |         38376 |               8 |
+| AdsPriorities2              | Categorical |             60480 |         38376 |               8 |
+| AdsPriorities3              | Categorical |             60480 |         38376 |               8 |
+| AdsPriorities4              | Categorical |             60480 |         38376 |               8 |
+| AdsPriorities5              | Categorical |             60480 |         38376 |               8 |
+| AdsPriorities6              | Categorical |             60480 |         38376 |               8 |
+| AdsPriorities7              | Categorical |             60480 |         38376 |               8 |
+| AIDangerous                 | Categorical |             63116 |         35740 |               5 |
+| AIInteresting               | Categorical |             65368 |         33488 |               5 |
+| AIResponsible               | Categorical |             65554 |         33302 |               5 |
+| AIFuture                    | Categorical |             69729 |         29127 |               4 |
+| EthicsChoice                | Categorical |             70783 |         28073 |               4 |
+| EthicsReport                | Categorical |             70427 |         28429 |               5 |
+| EthicsResponsible           | Categorical |             64541 |         34315 |               4 |
+| EthicalImplications         | Categorical |             69310 |         29546 |               4 |
+| StackOverflowRecommend      | Text        |             76490 |         22366 |              12 |
+| StackOverflowVisit          | Categorical |             76812 |         22044 |               7 |
+| StackOverflowHasAccount     | Categorical |             76792 |         22064 |               4 |
+| StackOverflowParticipate    | Categorical |             65741 |         33115 |               7 |
+| StackOverflowJobs           | Categorical |             75298 |         23558 |               4 |
+| StackOverflowDevStory       | Categorical |             65678 |         33178 |               5 |
+| StackOverflowJobsRecommend  | Text        |             38318 |         60538 |              12 |
+| StackOverflowConsiderMember | Categorical |             76008 |         22848 |               4 |
+| HypotheticalTools1          | Categorical |             70069 |         28787 |               6 |
+| HypotheticalTools2          | Categorical |             70053 |         28803 |               6 |
+| HypotheticalTools3          | Categorical |             70000 |         28856 |               6 |
+| HypotheticalTools4          | Categorical |             69987 |         28869 |               6 |
+| HypotheticalTools5          | Categorical |             70046 |         28810 |               6 |
+| WakeTime                    | Text        |             72147 |         26709 |              12 |
+| HoursComputer               | Categorical |             72134 |         26722 |               6 |
+| HoursOutside                | Categorical |             72025 |         26831 |               6 |
+| SkipMeals                   | Categorical |             71947 |         26909 |               5 |
+| ErgonomicDevices            | Array       |             34059 |         64797 |              16 |
+| Exercise                    | Categorical |             72109 |         26747 |               5 |
+| Gender                      | Array       |             64470 |         34386 |              16 |
+| SexualOrientation           | Array       |             59766 |         39090 |              15 |
+| EducationParents            | Text        |             61814 |         37042 |              10 |
+| RaceEthnicity               | Array       |             57474 |         41382 |              72 |
+| Age                         | Categorical |             64575 |         34281 |               8 |
+| Dependents                  | Categorical |             62597 |         36259 |               3 |
+| MilitaryUS                  | Categorical |             15782 |         83074 |               3 |
+| SurveyTooLong               | Categorical |             65942 |         32914 |               4 |
+| SurveyEasy                  | Categorical |             65880 |         32976 |               6 |
+
+Schema for Survey Year 2019:
+| Question               | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-----------------------|:------------|------------------:|--------------:|----------------:|
+| Respondent             | Text        |             88884 |             0 |           88884 |
+| MainBranch             | Categorical |             88332 |           552 |               6 |
+| Hobbyist               | Categorical |             88884 |             0 |               3 |
+| OpenSourcer            | Categorical |             88884 |             0 |               5 |
+| OpenSource             | Categorical |             86843 |          2041 |               4 |
+| Employment             | Categorical |             87182 |          1702 |               7 |
+| Country                | Text        |             88752 |           132 |             180 |
+| Student                | Categorical |             87015 |          1869 |               4 |
+| EdLevel                | Text        |             86391 |          2493 |              10 |
+| UndergradMajor         | Text        |             75615 |         13269 |              13 |
+| EduOther               | Array       |             84261 |          4623 |             493 |
+| OrgSize                | Text        |             71792 |         17092 |              10 |
+| DevType                | Array       |             81336 |          7548 |           13142 |
+| YearsCode              | Text        |             87939 |           945 |              53 |
+| Age1stCode             | Text        |             87635 |          1249 |              70 |
+| YearsCodePro           | Text        |             74332 |         14552 |              53 |
+| CareerSat              | Categorical |             72848 |         16036 |               6 |
+| JobSat                 | Categorical |             70989 |         17895 |               6 |
+| MgrIdiot               | Categorical |             61160 |         27724 |               5 |
+| MgrMoney               | Categorical |             61158 |         27726 |               4 |
+| MgrWant                | Categorical |             61233 |         27651 |               5 |
+| JobSeek                | Categorical |             80556 |          8328 |               4 |
+| LastHireDate           | Categorical |             79855 |          9029 |               7 |
+| LastInt                | Array       |             67156 |         21728 |              64 |
+| FizzBuzz               | Categorical |             71345 |         17539 |               3 |
+| JobFactors             | Array       |             79372 |          9512 |             176 |
+| ResumeUpdate           | Categorical |             77878 |         11006 |               7 |
+| CurrencySymbol         | Text        |             71393 |         17491 |             144 |
+| CurrencyDesc           | Text        |             71393 |         17491 |             145 |
+| CompTotal              | Text        |             55946 |         32938 |            4199 |
+| CompFreq               | Categorical |             63269 |         25615 |               4 |
+| ConvertedComp          | Text        |             55824 |         33060 |            9163 |
+| WorkWeekHrs            | Text        |             64504 |         24380 |             208 |
+| WorkPlan               | Array       |             68915 |         19969 |               4 |
+| WorkChallenge          | Array       |             68142 |         20742 |             130 |
+| WorkRemote             | Categorical |             70285 |         18599 |               8 |
+| WorkLoc                | Categorical |             70056 |         18828 |               4 |
+| ImpSyn                 | Categorical |             71780 |         17104 |               6 |
+| CodeRev                | Categorical |             70391 |         18493 |               4 |
+| CodeRevHrs             | Text        |             49791 |         39093 |             101 |
+| UnitTests              | Categorical |             62669 |         26215 |               5 |
+| PurchaseHow            | Categorical |             61109 |         27775 |               5 |
+| PurchaseWhat           | Categorical |             62030 |         26854 |               4 |
+| LanguageWorkedWith     | Array       |             87570 |          1314 |           20099 |
+| LanguageDesireNextYear | Array       |             84089 |          4795 |           27260 |
+| DatabaseWorkedWith     | Array       |             76027 |         12857 |            3479 |
+| DatabaseDesireNextYear | Array       |             69148 |         19736 |            3924 |
+| PlatformWorkedWith     | Array       |             80715 |          8169 |            8732 |
+| PlatformDesireNextYear | Array       |             77444 |         11440 |           10796 |
+| WebFrameWorkedWith     | Array       |             65023 |         23861 |            2143 |
+| WebFrameDesireNextYear | Array       |             62945 |         25939 |            2313 |
+| MiscTechWorkedWith     | Array       |             59587 |         29297 |            2784 |
+| MiscTechDesireNextYear | Array       |             64512 |         24372 |            5566 |
+| DevEnviron             | Array       |             87318 |          1566 |            7717 |
+| OpSys                  | Categorical |             87852 |          1032 |               5 |
+| Containers             | Array       |             85367 |          3517 |              22 |
+| BlockchainOrg          | Categorical |             48176 |         40708 |               6 |
+| BlockchainIs           | Categorical |             60166 |         28718 |               6 |
+| BetterLife             | Categorical |             86270 |          2614 |               3 |
+| ITperson               | Categorical |             87142 |          1742 |               5 |
+| OffOn                  | Categorical |             86664 |          2220 |               4 |
+| SocialMedia            | Text        |             84438 |          4446 |              15 |
+| Extraversion           | Categorical |             87306 |          1578 |               4 |
+| ScreenName             | Categorical |             80487 |          8397 |               6 |
+| SOVisit1st             | Text        |             83878 |          5006 |              14 |
+| SOVisitFreq            | Categorical |             88264 |           620 |               7 |
+| SOVisitTo              | Array       |             88087 |           797 |              64 |
+| SOFindAnswer           | Categorical |             87817 |          1067 |               6 |
+| SOTimeSaved            | Categorical |             86345 |          2539 |               6 |
+| SOHowMuchTime          | Categorical |             68379 |         20505 |               5 |
+| SOAccount              | Categorical |             87829 |          1055 |               4 |
+| SOPartFreq             | Categorical |             74693 |         14191 |               7 |
+| SOJobs                 | Categorical |             88067 |           817 |               4 |
+| EntTeams               | Categorical |             87842 |          1042 |               4 |
+| SOComm                 | Categorical |             88132 |           752 |               7 |
+| WelcomeChange          | Categorical |             85856 |          3028 |               7 |
+| SONewContent           | Array       |             69561 |         19323 |              16 |
+| Age                    | Text        |             79211 |          9673 |             127 |
+| Gender                 | Array       |             85407 |          3477 |               8 |
+| Trans                  | Categorical |             83608 |          5276 |               3 |
+| Sexuality              | Array       |             76148 |         12736 |               8 |
+| Ethnicity              | Array       |             76669 |         12215 |             197 |
+| Dependents             | Categorical |             83060 |          5824 |               3 |
+| SurveyLength           | Categorical |             86985 |          1899 |               4 |
+| SurveyEase             | Categorical |             87082 |          1802 |               4 |
+
+Schema for Survey Year 2020:
+| Question                     | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-----------------------------|:------------|------------------:|--------------:|----------------:|
+| Respondent                   | Text        |             64462 |             0 |           64462 |
+| MainBranch                   | Categorical |             64163 |           299 |               6 |
+| Hobbyist                     | Categorical |             64417 |            45 |               3 |
+| Age                          | Text        |             45447 |         19015 |             111 |
+| Age1stCode                   | Text        |             57901 |          6561 |              64 |
+| CompFreq                     | Categorical |             40070 |         24392 |               4 |
+| CompTotal                    | Text        |             34827 |         29635 |            3004 |
+| ConvertedComp                | Text        |             34757 |         29705 |            6959 |
+| Country                      | Text        |             64073 |           389 |             184 |
+| CurrencyDesc                 | Text        |             45473 |         18989 |             143 |
+| CurrencySymbol               | Text        |             45473 |         18989 |             142 |
+| DatabaseDesireNextYear       | Array       |             44071 |         20391 |            3194 |
+| DatabaseWorkedWith           | Array       |             49538 |         14924 |            2809 |
+| DevType                      | Array       |             49371 |         15091 |            8270 |
+| EdLevel                      | Text        |             57432 |          7030 |              10 |
+| Employment                   | Categorical |             63855 |           607 |               8 |
+| Ethnicity                    | Array       |             45949 |         18513 |             209 |
+| Gender                       | Array       |             50558 |         13904 |               8 |
+| JobFactors                   | Array       |             49350 |         15112 |             231 |
+| JobSat                       | Categorical |             45195 |         19267 |               6 |
+| JobSeek                      | Categorical |             51728 |         12734 |               4 |
+| LanguageDesireNextYear       | Array       |             54114 |         10348 |           16244 |
+| LanguageWorkedWith           | Array       |             57379 |          7083 |           14257 |
+| MiscTechDesireNextYear       | Array       |             42380 |         22082 |            5217 |
+| MiscTechWorkedWith           | Array       |             40315 |         24147 |            2731 |
+| NEWCollabToolsDesireNextYear | Array       |             47288 |         17174 |            1278 |
+| NEWCollabToolsWorkedWith     | Array       |             52884 |         11578 |            1154 |
+| NEWDevOps                    | Categorical |             42687 |         21775 |               4 |
+| NEWDevOpsImpt                | Categorical |             41733 |         22729 |               6 |
+| NEWEdImpt                    | Categorical |             48466 |         15996 |               6 |
+| NEWJobHunt                   | Array       |             42287 |         22175 |            2173 |
+| NEWJobHuntResearch           | Array       |             41023 |         23439 |              64 |
+| NEWLearn                     | Categorical |             56157 |          8305 |               5 |
+| NEWOffTopic                  | Categorical |             50805 |         13657 |               4 |
+| NEWOnboardGood               | Categorical |             42624 |         21838 |               4 |
+| NEWOtherComms                | Categorical |             57206 |          7256 |               3 |
+| NEWOvertime                  | Categorical |             43232 |         21230 |               6 |
+| NEWPurchaseResearch          | Array       |             37322 |         27140 |              64 |
+| NEWPurpleLink                | Categorical |             54804 |          9658 |               5 |
+| NEWSOSites                   | Array       |             58276 |          6186 |              62 |
+| NEWStuck                     | Array       |             54984 |          9478 |             445 |
+| OpSys                        | Categorical |             56229 |          8233 |               5 |
+| OrgSize                      | Text        |             44335 |         20127 |              10 |
+| PlatformDesireNextYear       | Array       |             50606 |         13856 |            7472 |
+| PlatformWorkedWith           | Array       |             53844 |         10618 |            6288 |
+| PurchaseWhat                 | Categorical |             39365 |         25097 |               4 |
+| Sexuality                    | Array       |             43993 |         20469 |              15 |
+| SOAccount                    | Categorical |             56806 |          7656 |               4 |
+| SOComm                       | Categorical |             56477 |          7985 |               7 |
+| SOPartFreq                   | Categorical |             46793 |         17669 |               7 |
+| SOVisitFreq                  | Categorical |             56971 |          7491 |               7 |
+| SurveyEase                   | Categorical |             51803 |         12659 |               4 |
+| SurveyLength                 | Categorical |             51702 |         12760 |               4 |
+| Trans                        | Categorical |             49346 |         15116 |               3 |
+| UndergradMajor               | Text        |             50996 |         13466 |              13 |
+| WebframeDesireNextYear       | Array       |             40025 |         24437 |            3987 |
+| WebframeWorkedWith           | Array       |             42280 |         22182 |            3790 |
+| WelcomeChange                | Categorical |             52684 |         11778 |               7 |
+| WorkWeekHrs                  | Text        |             41152 |         23310 |             158 |
+| YearsCode                    | Text        |             57685 |          6777 |              53 |
+| YearsCodePro                 | Text        |             46350 |         18112 |              53 |
+
+Schema for Survey Year 2021:
+| Question                     | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-----------------------------|:------------|------------------:|--------------:|----------------:|
+| ResponseId                   | Text        |             83440 |             0 |           83440 |
+| MainBranch                   | Categorical |             83440 |             0 |               7 |
+| Employment                   | Text        |             83324 |           116 |              10 |
+| Country                      | Text        |             83440 |             0 |             182 |
+| US_State                     | Text        |             14921 |         68519 |              56 |
+| UK_Country                   | Categorical |              4419 |         79021 |               5 |
+| EdLevel                      | Text        |             83127 |           313 |              10 |
+| Age1stCode                   | Text        |             83244 |           196 |              10 |
+| LearnCode                    | Array       |             82964 |           476 |             459 |
+| YearsCode                    | Text        |             81642 |          1798 |              53 |
+| YearsCodePro                 | Text        |             61217 |         22223 |              53 |
+| DevType                      | Array       |             66485 |         16955 |            8627 |
+| OrgSize                      | Text        |             60727 |         22713 |              11 |
+| Currency                     | Text        |             61081 |         22359 |             147 |
+| CompTotal                    | Text        |             47184 |         36256 |            3753 |
+| CompFreq                     | Categorical |             52151 |         31289 |               4 |
+| LanguageHaveWorkedWith       | Array       |             82358 |          1082 |           28691 |
+| LanguageWantToWorkWith       | Array       |             76822 |          6618 |           27546 |
+| DatabaseHaveWorkedWith       | Array       |             69547 |         13893 |            3073 |
+| DatabaseWantToWorkWith       | Array       |             58300 |         25140 |            3138 |
+| PlatformHaveWorkedWith       | Array       |             52136 |         31304 |             119 |
+| PlatformWantToWorkWith       | Array       |             41620 |         41820 |             127 |
+| WebframeHaveWorkedWith       | Array       |             61708 |         21732 |            5403 |
+| WebframeWantToWorkWith       | Array       |             52096 |         31344 |            5114 |
+| MiscTechHaveWorkedWith       | Array       |             47056 |         36384 |            1388 |
+| MiscTechWantToWorkWith       | Array       |             38022 |         45418 |            1685 |
+| ToolsTechHaveWorkedWith      | Array       |             72538 |         10902 |             903 |
+| ToolsTechWantToWorkWith      | Array       |             65481 |         17959 |            1404 |
+| NEWCollabToolsHaveWorkedWith | Array       |             81235 |          2205 |           12101 |
+| NEWCollabToolsWantToWorkWith | Array       |             73023 |         10417 |            7027 |
+| OpSys                        | Categorical |             83295 |           145 |               7 |
+| NEWStuck                     | Array       |             83053 |           387 |            1280 |
+| NEWSOSites                   | Array       |             83172 |           268 |               9 |
+| SOVisitFreq                  | Categorical |             82414 |          1026 |               6 |
+| SOAccount                    | Categorical |             82526 |           914 |               4 |
+| SOPartFreq                   | Categorical |             67554 |         15886 |               7 |
+| SOComm                       | Categorical |             82320 |          1120 |               7 |
+| NEWOtherComms                | Categorical |             82829 |           611 |               3 |
+| Age                          | Categorical |             82408 |          1032 |               9 |
+| Gender                       | Array       |             82287 |          1153 |              17 |
+| Trans                        | Categorical |             80679 |          2761 |               5 |
+| Sexuality                    | Array       |             73367 |         10073 |              31 |
+| Ethnicity                    | Array       |             79465 |          3975 |             373 |
+| Accessibility                | Array       |             77604 |          5836 |              32 |
+| MentalHealth                 | Array       |             76921 |          6519 |              34 |
+| SurveyLength                 | Categorical |             81712 |          1728 |               4 |
+| SurveyEase                   | Categorical |             81949 |          1491 |               4 |
+| ConvertedCompYearly          | Text        |             46845 |         36595 |            8736 |
+
+Schema for Survey Year 2022:
+| Question                       | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-------------------------------|:------------|------------------:|--------------:|----------------:|
+| ResponseId                     | Text        |             73269 |             0 |           73269 |
+| MainBranch                     | Categorical |             73269 |             0 |               7 |
+| Employment                     | Array       |             71710 |          1559 |             104 |
+| RemoteWork                     | Categorical |             58959 |         14310 |               4 |
+| CodingActivities               | Array       |             58900 |         14369 |              64 |
+| EdLevel                        | Text        |             71572 |          1697 |              10 |
+| LearnCode                      | Array       |             71581 |          1688 |             738 |
+| LearnCodeOnline                | Array       |             50686 |         22583 |            7193 |
+| LearnCodeCoursesCert           | Array       |             29390 |         43879 |             207 |
+| YearsCode                      | Text        |             71332 |          1937 |              53 |
+| YearsCodePro                   | Text        |             51834 |         21435 |              53 |
+| DevType                        | Array       |             61303 |         11966 |            9985 |
+| OrgSize                        | Text        |             51040 |         22229 |              11 |
+| PurchaseInfluence              | Categorical |             50970 |         22299 |               4 |
+| BuyNewTool                     | Array       |             67964 |          5305 |             126 |
+| Country                        | Text        |             71772 |          1497 |             181 |
+| Currency                       | Text        |             51265 |         22004 |             143 |
+| CompTotal                      | Text        |             38423 |         34846 |            3180 |
+| CompFreq                       | Categorical |             44426 |         28843 |               4 |
+| LanguageHaveWorkedWith         | Array       |             70976 |          2293 |           25069 |
+| LanguageWantToWorkWith         | Array       |             67028 |          6241 |           23953 |
+| DatabaseHaveWorkedWith         | Array       |             60122 |         13147 |            4224 |
+| DatabaseWantToWorkWith         | Array       |             51015 |         22254 |            4292 |
+| PlatformHaveWorkedWith         | Array       |             49925 |         23344 |            1501 |
+| PlatformWantToWorkWith         | Array       |             40416 |         32853 |            1436 |
+| WebframeHaveWorkedWith         | Array       |             53545 |         19724 |            8260 |
+| WebframeWantToWorkWith         | Array       |             46123 |         27146 |            8885 |
+| MiscTechHaveWorkedWith         | Array       |             44993 |         28276 |            4206 |
+| MiscTechWantToWorkWith         | Array       |             36811 |         36458 |            5087 |
+| ToolsTechHaveWorkedWith        | Array       |             54172 |         19097 |             952 |
+| ToolsTechWantToWorkWith        | Array       |             46567 |         26702 |            1246 |
+| NEWCollabToolsHaveWorkedWith   | Array       |             70348 |          2921 |           15064 |
+| NEWCollabToolsWantToWorkWith   | Array       |             64109 |          9160 |            9189 |
+| OpSysProfessional use          | Array       |             65504 |          7765 |              56 |
+| OpSysPersonal use              | Array       |             70964 |          2305 |              57 |
+| VersionControlSystem           | Array       |             71380 |          1889 |              17 |
+| VCInteraction                  | Array       |             68157 |          5112 |              16 |
+| VCHostingPersonal use          | Categorical |                 1 |         73268 |               1 |
+| VCHostingProfessional use      | Categorical |                 1 |         73268 |               1 |
+| OfficeStackAsyncHaveWorkedWith | Array       |             46224 |         27045 |            1086 |
+| OfficeStackAsyncWantToWorkWith | Array       |             32073 |         41196 |             826 |
+| OfficeStackSyncHaveWorkedWith  | Array       |             62129 |         11140 |             398 |
+| OfficeStackSyncWantToWorkWith  | Array       |             47689 |         25580 |             354 |
+| Blockchain                     | Categorical |             71072 |          2197 |               7 |
+| NEWSOSites                     | Array       |             71366 |          1903 |              17 |
+| SOVisitFreq                    | Categorical |             70962 |          2307 |               6 |
+| SOAccount                      | Categorical |             71573 |          1696 |               4 |
+| SOPartFreq                     | Categorical |             58230 |         15039 |               7 |
+| SOComm                         | Categorical |             71409 |          1860 |               7 |
+| Age                            | Categorical |             70947 |          2322 |               9 |
+| Gender                         | Array       |             70854 |          2415 |              17 |
+| Trans                          | Categorical |             70316 |          2953 |               5 |
+| Sexuality                      | Array       |             66566 |          6703 |              33 |
+| Ethnicity                      | Array       |             69475 |          3794 |            1056 |
+| Accessibility                  | Array       |             67245 |          6024 |              28 |
+| MentalHealth                   | Array       |             66448 |          6821 |              58 |
+| TBranch                        | Categorical |             52671 |         20598 |               3 |
+| ICorPM                         | Categorical |             36284 |         36985 |               3 |
+| WorkExp                        | Text        |             36770 |         36499 |              52 |
+| Knowledge_1                    | Categorical |             35805 |         37464 |               6 |
+| Knowledge_2                    | Categorical |             34974 |         38295 |               6 |
+| Knowledge_3                    | Categorical |             35134 |         38135 |               6 |
+| Knowledge_4                    | Categorical |             35098 |         38171 |               6 |
+| Knowledge_5                    | Categorical |             35015 |         38254 |               6 |
+| Knowledge_6                    | Categorical |             34992 |         38277 |               6 |
+| Knowledge_7                    | Categorical |             34978 |         38291 |               6 |
+| Frequency_1                    | Categorical |             35372 |         37897 |               6 |
+| Frequency_2                    | Categorical |             35345 |         37924 |               6 |
+| Frequency_3                    | Categorical |             34516 |         38753 |               6 |
+| TimeSearching                  | Categorical |             36199 |         37070 |               6 |
+| TimeAnswering                  | Categorical |             36023 |         37246 |               6 |
+| Onboarding                     | Categorical |             35680 |         37589 |               6 |
+| ProfessionalTech               | Array       |             34907 |         38362 |             156 |
+| TrueFalse_1                    | Categorical |             35820 |         37449 |               3 |
+| TrueFalse_2                    | Categorical |             35716 |         37553 |               3 |
+| TrueFalse_3                    | Categorical |             35750 |         37519 |               3 |
+| SurveyLength                   | Categorical |             70445 |          2824 |               4 |
+| SurveyEase                     | Categorical |             70509 |          2760 |               4 |
+| ConvertedCompYearly            | Text        |             38072 |         35197 |            7910 |
+
+Schema for Survey Year 2023:
+| Question                            | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:------------------------------------|:------------|------------------:|--------------:|----------------:|
+| ResponseId                          | Text        |             89185 |             0 |           89185 |
+| Q120                                | Categorical |             89185 |             0 |               2 |
+| MainBranch                          | Categorical |             89185 |             0 |               7 |
+| Age                                 | Categorical |             89185 |             0 |               9 |
+| Employment                          | Array       |             87899 |          1286 |             107 |
+| RemoteWork                          | Categorical |             73811 |         15374 |               4 |
+| CodingActivities                    | Array       |             73765 |         15420 |             117 |
+| EdLevel                             | Categorical |             87974 |          1211 |               9 |
+| LearnCode                           | Array       |             87664 |          1521 |             791 |
+| LearnCodeOnline                     | Array       |             70085 |         19100 |            7941 |
+| LearnCodeCoursesCert                | Array       |             37077 |         52108 |             211 |
+| YearsCode                           | Text        |             87436 |          1749 |              53 |
+| YearsCodePro                        | Text        |             66137 |         23048 |              53 |
+| DevType                             | Text        |             76873 |         12312 |              34 |
+| OrgSize                             | Text        |             65044 |         24141 |              11 |
+| PurchaseInfluence                   | Categorical |             64965 |         24220 |               4 |
+| TechList                            | Categorical |             60852 |         28333 |               4 |
+| BuyNewTool                          | Array       |             83010 |          6175 |             232 |
+| Country                             | Text        |             87974 |          1211 |             186 |
+| Currency                            | Text        |             65335 |         23850 |             145 |
+| CompTotal                           | Text        |             48226 |         40959 |            3829 |
+| LanguageHaveWorkedWith              | Array       |             87141 |          2044 |           32642 |
+| LanguageWantToWorkWith              | Array       |             80710 |          8475 |           29603 |
+| DatabaseHaveWorkedWith              | Array       |             73436 |         15749 |           11097 |
+| DatabaseWantToWorkWith              | Array       |             60912 |         28273 |           10486 |
+| PlatformHaveWorkedWith              | Array       |             63629 |         25556 |            5921 |
+| PlatformWantToWorkWith              | Array       |             51309 |         37876 |            4964 |
+| WebframeHaveWorkedWith              | Array       |             66939 |         22246 |           15145 |
+| WebframeWantToWorkWith              | Array       |             56742 |         32443 |           14621 |
+| MiscTechHaveWorkedWith              | Array       |             57020 |         32165 |           10323 |
+| MiscTechWantToWorkWith              | Array       |             46849 |         42336 |           11776 |
+| ToolsTechHaveWorkedWith             | Array       |             77885 |         11300 |           33134 |
+| ToolsTechWantToWorkWith             | Array       |             68316 |         20869 |           27457 |
+| NEWCollabToolsHaveWorkedWith        | Array       |             85865 |          3320 |           21263 |
+| NEWCollabToolsWantToWorkWith        | Array       |             76650 |         12535 |           13660 |
+| OpSysPersonal use                   | Array       |             86558 |          2627 |            3051 |
+| OpSysProfessional use               | Array       |             78588 |         10597 |            2471 |
+| OfficeStackAsyncHaveWorkedWith      | Array       |             69091 |         20094 |            6259 |
+| OfficeStackAsyncWantToWorkWith      | Array       |             53744 |         35441 |            3755 |
+| OfficeStackSyncHaveWorkedWith       | Array       |             83440 |          5745 |            6926 |
+| OfficeStackSyncWantToWorkWith       | Array       |             69777 |         19408 |            4079 |
+| AISearchHaveWorkedWith              | Array       |             56329 |         32856 |             324 |
+| AISearchWantToWorkWith              | Array       |             46151 |         43034 |             400 |
+| AIDevHaveWorkedWith                 | Array       |             25905 |         63280 |             167 |
+| AIDevWantToWorkWith                 | Array       |             19588 |         69597 |             234 |
+| NEWSOSites                          | Array       |             87974 |          1211 |              17 |
+| SOVisitFreq                         | Categorical |             87141 |          2044 |               6 |
+| SOAccount                           | Categorical |             87853 |          1332 |               4 |
+| SOPartFreq                          | Categorical |             66062 |         23123 |               7 |
+| SOComm                              | Categorical |             87693 |          1492 |               7 |
+| SOAI                                | Array       |             47913 |         41272 |           43063 |
+| AISelect                            | Categorical |             87974 |          1211 |               4 |
+| AISent                              | Categorical |             61502 |         27683 |               7 |
+| AIAcc                               | Array       |             38595 |         50590 |              61 |
+| AIBen                               | Categorical |             61397 |         27788 |               6 |
+| AIToolInterested in Using           | Array       |             32784 |         56401 |             641 |
+| AIToolCurrently Using               | Array       |             36138 |         53047 |             534 |
+| AIToolNot interested in Using       | Array       |             21070 |         68115 |             536 |
+| AINextVery different                | Array       |             12662 |         76523 |             350 |
+| AINextNeither different nor similar | Array       |              6600 |         82585 |             223 |
+| AINextSomewhat similar              | Array       |              6239 |         82946 |             198 |
+| AINextVery similar                  | Array       |              2622 |         86563 |             160 |
+| AINextSomewhat different            | Array       |             23304 |         65881 |             327 |
+| TBranch                             | Categorical |             65769 |         23416 |               3 |
+| ICorPM                              | Categorical |             43669 |         45516 |               3 |
+| WorkExp                             | Text        |             43580 |         45605 |              52 |
+| Knowledge_1                         | Categorical |             42536 |         46649 |               6 |
+| Knowledge_2                         | Categorical |             41671 |         47514 |               6 |
+| Knowledge_3                         | Categorical |             41799 |         47386 |               6 |
+| Knowledge_4                         | Categorical |             41685 |         47500 |               6 |
+| Knowledge_5                         | Categorical |             41528 |         47657 |               6 |
+| Knowledge_6                         | Categorical |             41521 |         47664 |               6 |
+| Knowledge_7                         | Categorical |             41468 |         47717 |               6 |
+| Knowledge_8                         | Categorical |             41405 |         47780 |               6 |
+| Frequency_1                         | Categorical |             41917 |         47268 |               6 |
+| Frequency_2                         | Categorical |             41926 |         47259 |               6 |
+| Frequency_3                         | Categorical |             41055 |         48130 |               6 |
+| TimeSearching                       | Categorical |             42779 |         46406 |               6 |
+| TimeAnswering                       | Categorical |             42630 |         46555 |               6 |
+| ProfessionalTech                    | Array       |             41784 |         47401 |             285 |
+| Industry                            | Text        |             36775 |         52410 |              13 |
+| SurveyLength                        | Categorical |             86486 |          2699 |               4 |
+| SurveyEase                          | Categorical |             86555 |          2630 |               4 |
+| ConvertedCompYearly                 | Text        |             48020 |         41165 |            8785 |
+
+Schema for Survey Year 2024:
+| Question                       | Data Type   |   Non-Null Values |   Null Values |   Unique Values |
+|:-------------------------------|:------------|------------------:|--------------:|----------------:|
+| ResponseId                     | Text        |             65438 |             0 |           65438 |
+| MainBranch                     | Categorical |             65438 |             0 |               6 |
+| Age                            | Categorical |             65438 |             0 |               9 |
+| Employment                     | Array       |             65438 |             0 |             111 |
+| RemoteWork                     | Categorical |             54807 |         10631 |               4 |
+| Check                          | Categorical |             65438 |             0 |               2 |
+| CodingActivities               | Array       |             54467 |         10971 |             119 |
+| EdLevel                        | Categorical |             60785 |          4653 |               9 |
+| LearnCode                      | Array       |             60489 |          4949 |             419 |
+| LearnCodeOnline                | Array       |             49238 |         16200 |           10854 |
+| TechDoc                        | Array       |             40898 |         24540 |             114 |
+| YearsCode                      | Text        |             59870 |          5568 |              53 |
+| YearsCodePro                   | Text        |             51611 |         13827 |              53 |
+| DevType                        | Text        |             59446 |          5992 |              35 |
+| OrgSize                        | Text        |             47481 |         17957 |              11 |
+| PurchaseInfluence              | Categorical |             47407 |         18031 |               4 |
+| BuyNewTool                     | Array       |             45182 |         20256 |             216 |
+| BuildvsBuy                     | Categorical |             43359 |         22079 |               4 |
+| TechEndorse                    | Array       |             43669 |         21769 |             387 |
+| Country                        | Text        |             58931 |          6507 |             186 |
+| Currency                       | Text        |             46685 |         18753 |             143 |
+| CompTotal                      | Text        |             33741 |         31697 |            3338 |
+| LanguageHaveWorkedWith         | Array       |             59746 |          5692 |           23865 |
+| LanguageWantToWorkWith         | Array       |             55753 |          9685 |           22770 |
+| LanguageAdmired                | Array       |             50873 |         14565 |           12336 |
+| DatabaseHaveWorkedWith         | Array       |             50255 |         15183 |            9051 |
+| DatabaseWantToWorkWith         | Array       |             42559 |         22879 |            8479 |
+| DatabaseAdmired                | Array       |             38558 |         26880 |            4052 |
+| PlatformHaveWorkedWith         | Array       |             42367 |         23071 |            5468 |
+| PlatformWantToWorkWith         | Array       |             34533 |         30905 |            4785 |
+| PlatformAdmired                | Array       |             31378 |         34060 |            2557 |
+| WebframeHaveWorkedWith         | Array       |             45162 |         20276 |           12236 |
+| WebframeWantToWorkWith         | Array       |             38536 |         26902 |           11655 |
+| WebframeAdmired                | Array       |             34944 |         30494 |            5461 |
+| EmbeddedHaveWorkedWith         | Array       |             22215 |         43223 |            1631 |
+| EmbeddedWantToWorkWith         | Array       |             17601 |         47837 |            1472 |
+| EmbeddedAdmired                | Array       |             16734 |         48704 |            1054 |
+| MiscTechHaveWorkedWith         | Array       |             39444 |         25994 |            9289 |
+| MiscTechWantToWorkWith         | Array       |             32965 |         32473 |           10264 |
+| MiscTechAdmired                | Array       |             29597 |         35841 |            4918 |
+| ToolsTechHaveWorkedWith        | Array       |             52483 |         12955 |           19884 |
+| ToolsTechWantToWorkWith        | Array       |             46085 |         19353 |           16550 |
+| ToolsTechAdmired               | Array       |             43998 |         21440 |           11805 |
+| NEWCollabToolsHaveWorkedWith   | Array       |             57593 |          7845 |           14169 |
+| NEWCollabToolsWantToWorkWith   | Array       |             52088 |         13350 |            9752 |
+| NEWCollabToolsAdmired          | Array       |             50712 |         14726 |            7546 |
+| OpSysPersonal use              | Array       |             58175 |          7263 |            2489 |
+| OpSysProfessional use          | Array       |             52974 |         12464 |            2033 |
+| OfficeStackAsyncHaveWorkedWith | Array       |             48094 |         17344 |            6015 |
+| OfficeStackAsyncWantToWorkWith | Array       |             38967 |         26471 |            3802 |
+| OfficeStackAsyncAdmired        | Array       |             37205 |         28233 |            2662 |
+| OfficeStackSyncHaveWorkedWith  | Array       |             55546 |          9892 |            5050 |
+| OfficeStackSyncWantToWorkWith  | Array       |             46712 |         18726 |            3206 |
+| OfficeStackSyncAdmired         | Array       |             44713 |         20725 |            2556 |
+| AISearchDevHaveWorkedWith      | Array       |             44454 |         20984 |            2664 |
+| AISearchDevWantToWorkWith      | Array       |             36702 |         28736 |            2362 |
+| AISearchDevAdmired             | Array       |             35544 |         29894 |            1489 |
+| NEWSOSites                     | Array       |             60287 |          5151 |              33 |
+| SOVisitFreq                    | Categorical |             59537 |          5901 |               6 |
+| SOAccount                      | Categorical |             59561 |          5877 |               4 |
+| SOPartFreq                     | Categorical |             45238 |         20200 |               7 |
+| SOHow                          | Array       |             58963 |          6475 |             112 |
+| SOComm                         | Categorical |             59164 |          6274 |               7 |
+| AISelect                       | Categorical |             60908 |          4530 |               4 |
+| AISent                         | Categorical |             45874 |         19564 |               7 |
+| AIBen                          | Array       |             36895 |         28543 |             114 |
+| AIAcc                          | Categorical |             37303 |         28135 |               6 |
+| AIComplex                      | Categorical |             37022 |         28416 |               6 |
+| AIToolCurrently Using          | Array       |             35073 |         30365 |            1311 |
+| AIToolInterested in Using      | Array       |             30692 |         34746 |            1950 |
+| AIToolNot interested in Using  | Array       |             24415 |         41023 |            1532 |
+| AINextMuch more integrated     | Array       |             13439 |         51999 |             701 |
+| AINextNo change                | Array       |             12499 |         52939 |             540 |
+| AINextMore integrated          | Array       |             24429 |         41009 |             885 |
+| AINextLess integrated          | Array       |              2356 |         63082 |             250 |
+| AINextMuch less integrated     | Array       |              1149 |         64289 |             287 |
+| AIThreat                       | Categorical |             44690 |         20748 |               4 |
+| AIEthics                       | Array       |             41549 |         23889 |             127 |
+| AIChallenges                   | Array       |             37532 |         27906 |             233 |
+| TBranch                        | Categorical |             44478 |         20960 |               3 |
+| ICorPM                         | Categorical |             29802 |         35636 |               3 |
+| WorkExp                        | Text        |             29659 |         35779 |              52 |
+| Knowledge_1                    | Categorical |             28665 |         36773 |               6 |
+| Knowledge_2                    | Categorical |             28022 |         37416 |               6 |
+| Knowledge_3                    | Categorical |             28096 |         37342 |               6 |
+| Knowledge_4                    | Categorical |             28031 |         37407 |               6 |
+| Knowledge_5                    | Categorical |             27881 |         37557 |               6 |
+| Knowledge_6                    | Categorical |             27865 |         37573 |               6 |
+| Knowledge_7                    | Categorical |             27779 |         37659 |               6 |
+| Knowledge_8                    | Categorical |             27759 |         37679 |               6 |
+| Knowledge_9                    | Categorical |             27636 |         37802 |               6 |
+| Frequency_1                    | Categorical |             28370 |         37068 |               6 |
+| Frequency_2                    | Categorical |             28365 |         37073 |               6 |
+| Frequency_3                    | Categorical |             27711 |         37727 |               6 |
+| TimeSearching                  | Categorical |             28912 |         36526 |               6 |
+| TimeAnswering                  | Categorical |             28845 |         36593 |               6 |
+| Frustration                    | Array       |             28252 |         37186 |             955 |
+| ProfessionalTech               | Array       |             27765 |         37673 |             515 |
+| ProfessionalCloud              | Categorical |             28492 |         36946 |               4 |
+| ProfessionalQuestion           | Text        |             28808 |         36630 |              10 |
+| Industry                       | Text        |             28859 |         36579 |              16 |
+| JobSatPoints_1                 | Text        |             29325 |         36113 |              92 |
+| JobSatPoints_4                 | Text        |             29394 |         36044 |              73 |
+| JobSatPoints_5                 | Text        |             29412 |         36026 |              79 |
+| JobSatPoints_6                 | Text        |             29451 |         35987 |              94 |
+| JobSatPoints_7                 | Text        |             29449 |         35989 |              92 |
+| JobSatPoints_8                 | Text        |             29457 |         35981 |              90 |
+| JobSatPoints_9                 | Text        |             29457 |         35981 |              86 |
+| JobSatPoints_10                | Text        |             29451 |         35987 |              76 |
+| JobSatPoints_11                | Text        |             29446 |         35992 |              80 |
+| SurveyLength                   | Categorical |             56183 |          9255 |               4 |
+| SurveyEase                     | Categorical |             56239 |          9199 |               4 |
+| ConvertedCompYearly            | Text        |             23436 |         42002 |            6114 |
+| JobSat                         | Text        |             29127 |         36311 |              12 |
